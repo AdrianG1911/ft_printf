@@ -1,13 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/31 15:39:35 by adrgutie          #+#    #+#             */
-/*   Updated: 2024/05/31 15:45:30 by adrgutie         ###   ########.fr       */
+/*   Created: 2024/05/21 20:37:28 by adrgutie          #+#    #+#             */
+/*   Updated: 2024/05/21 21:15:11 by adrgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
+
+void	ft_lstadd_back(t_list **lst, t_list *new)
+{
+	if (!lst || !new)
+		return ;
+	if (lst[0])
+		ft_lstlast(lst[0])->next = new;
+	else
+		lst[0] = new;
+}
