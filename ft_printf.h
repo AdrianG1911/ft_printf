@@ -14,9 +14,16 @@
 # define FT_PRINTF_H
 # include "libft/libft.h"
 # include <stdarg.h>
+# include <stdint.h>
 
 //req
 int	ft_printf(const char *str, ...);
+int	ft_printchar(char ch);
+int	ft_printstr(char *str);
+int	ft_printptr(void *ptr);
+int	ft_printint(int num);
+int	ft_printuint(unsigned int num);
+int	ft_printuhex(uintptr_t num, int upper);
 
 //bonus
 
