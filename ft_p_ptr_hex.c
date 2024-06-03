@@ -48,6 +48,8 @@ int	ft_printuhex(uintptr_t num, int upper)
 
 int ft_printptr(void *ptr)
 {
+	if (ptr == NULL)
+		return (ft_printstr("(nil)"));
 	ft_putstr_fd("0x", 1);
 	return (ft_printuhex((uintptr_t)ptr, 0) + 2);
 }
