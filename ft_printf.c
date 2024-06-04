@@ -6,7 +6,7 @@
 /*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 15:39:35 by adrgutie          #+#    #+#             */
-/*   Updated: 2024/06/01 20:11:47 by adrgutie         ###   ########.fr       */
+/*   Updated: 2024/06/04 13:55:48 by adrgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,21 +54,3 @@ int	ft_printf(const char *str, ...)
 	va_end(args);
 	return (count);
 }
-
-// #include <stdio.h>
-// #include "ft_printf.h"
-
-
-// int main(void)
-// {
-// 	char	ch = 'c';
-// 	char	str[] = "wowow";
-// 	char	*ptr = &(str[0]);
-// 	int		nip = 42;
-// 	int		nin = -42;
-// 	unsigned int uin = 4200000000;
-// 	char	toprint[] = "/%c/%s/%p/%d/%d/%u/%x/%X/%%/\n";
-// 	printf("%d\n", printf(toprint, ch, str, ptr, nip, nin, uin, uin, uin));
-// 	ft_printf("%d\n", ft_printf(toprint, ch, str, ptr, nip, nin, uin, uin, uin));
-
-// }

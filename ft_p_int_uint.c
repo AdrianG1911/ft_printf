@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_p_int_uint.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/06/04 13:50:48 by adrgutie          #+#    #+#             */
+/*   Updated: 2024/06/04 13:55:38 by adrgutie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 static int	numlen(long num)
 {
-	int len;
+	int	len;
 
 	if (num == 0)
 		return (1);
@@ -24,7 +36,7 @@ int	ft_printint(int num)
 		return (numlen(num));
 }
 
-int ft_printuint(unsigned int num)
+int	ft_printuint(unsigned int num)
 {
 	int		len;
 	char	decrep[11];

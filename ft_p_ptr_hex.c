@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_p_ptr_hex.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/06/04 13:50:53 by adrgutie          #+#    #+#             */
+/*   Updated: 2024/06/04 13:53:14 by adrgutie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 static int	findplen(uintptr_t pint)
@@ -17,15 +29,15 @@ static int	findplen(uintptr_t pint)
 
 static char	hextochar(int num, int upper)
 {
-	char	aA;
+	char	a;
 
-	aA = 'a';
+	a = 'a';
 	if (upper)
-		aA = 'A';
+		a = 'A';
 	if (num < 10)
 		return ('0' + num);
 	else
-		return (aA + (num - 10));
+		return (a + (num - 10));
 }
 
 int	ft_printuhex(uintptr_t num, int upper)
@@ -46,7 +58,7 @@ int	ft_printuhex(uintptr_t num, int upper)
 	return (ft_printstr(hexform));
 }
 
-int ft_printptr(void *ptr)
+int	ft_printptr(void *ptr)
 {
 	if (ptr == NULL)
 		return (ft_printstr("(nil)"));
