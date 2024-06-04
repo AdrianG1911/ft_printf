@@ -6,7 +6,7 @@
 /*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 13:50:53 by adrgutie          #+#    #+#             */
-/*   Updated: 2024/06/04 13:53:14 by adrgutie         ###   ########.fr       */
+/*   Updated: 2024/06/04 14:32:00 by adrgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,6 @@ int	ft_printuhex(uintptr_t num, int upper)
 
 int	ft_printptr(void *ptr)
 {
-	if (ptr == NULL)
-		return (ft_printstr("(nil)"));
 	ft_putstr_fd("0x", 1);
 	return (ft_printuhex((uintptr_t)ptr, 0) + 2);
 }
