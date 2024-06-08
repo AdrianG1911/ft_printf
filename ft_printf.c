@@ -6,13 +6,13 @@
 /*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 15:39:35 by adrgutie          #+#    #+#             */
-/*   Updated: 2024/06/04 13:55:48 by adrgutie         ###   ########.fr       */
+/*   Updated: 2024/06/08 14:43:19 by adrgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	dealwithit(const char ch, va_list args)
+static int	dealwithit(const char ch, va_list args)
 {
 	if (ch == 'c')
 		return (ft_printchar(va_arg(args, int)));
